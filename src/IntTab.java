@@ -73,7 +73,7 @@ public class IntTab {
     }
 
     public boolean insert(int data, int i){
-        if(size+1 <=MAX_SIZE && i>=0 && i<MAX_SIZE){
+        if(size+1 <=MAX_SIZE && i>=0 && i<(size)){
             int temp1=tab[i];
             int temp2=tab[i+1];
             tab[i]=data;

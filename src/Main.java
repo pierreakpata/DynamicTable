@@ -20,18 +20,24 @@ public class Main {
         liste.addLast(1);
         liste.addLast(8);  
         liste.addLast(2);
+
+        //affichage du tableau avant toute opération
         System.out.println(liste.getSize());
         System.out.println(liste.toString());
 
+        //récupération et modification d'un élément dans le tableau
+        System.out.println(liste.get(3)); //resultat attendu est 8
+        //liste.set(5, 3); //resultat attendu est tab=[3,7,1,5,2]
+
         //suppression d'un élément du tableau
-        //liste.remove(2);  //Resultat attendu est Tab=[3,7,8,2]
-        //System.out.println(liste.getSize());
-        //System.out.println(liste.toString());
+        //liste.remove(2);  //resultat attendu est Tab=[3,7,8,2]
 
         //Insertion à la position i
-        liste.insert(6, 8); //Resultat attendu est Tab=[3,7,6,1,8,2]
+        //liste.insert(6, 2); //resultat attendu est Tab=[3,7,6,1,8,2]
 
         //Redimenssionner le tableau
+        //liste.resize(8); //resultat attendu est Tab=[3,7,6,1,8,2,0,0,0]
+
         System.out.println(liste.getSize());
         System.out.println(liste.toString());
     }
